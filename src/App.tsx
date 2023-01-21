@@ -1,8 +1,13 @@
+import Todo from './pages/Todo/Todo';
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">Hello world</div>
+    <Routes>
+      <Route path="/" element={<Todo />} />
+      <Route path="/todo" element={<Todo />} />
+    </Routes>
   );
 }
 
